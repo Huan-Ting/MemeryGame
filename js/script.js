@@ -27,7 +27,6 @@ function putInScore(){
 
 function renderitems(items){
     putInScore();
-
     items.forEach(item => {
         items_layout_html.innerHTML+=`
         <div class="one-card" data-name="${item.name}">
@@ -71,6 +70,7 @@ function matchFunc(){
         first_card.classList.add('fixed');
         second_card.classList.add('fixed');
         score+=1;
+        putInScore()
     }else{
         first_card.classList.remove("flip");
         second_card.classList.remove("flip");
