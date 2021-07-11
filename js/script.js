@@ -53,6 +53,8 @@ function toFlip(item){
     if(first_card===null){
         first_card=item;
         item.classList.add('flip');
+    }else if(first_card===item){
+        return;
     }else if(second_card===null){
         second_card=item;
         item.classList.add('flip');
