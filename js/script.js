@@ -20,7 +20,8 @@ const score_html=document.getElementById('score-layout');
 
 
 function putInScore(){
-    score_html.innerHTML+=`<div>Your Score: ${score}/10</div>`;
+    score_html.innerHTML="";
+    score_html.innerHTML+=`Your score:  ${score} / 10`;
 }
 
 
@@ -57,7 +58,7 @@ function toFlip(item){
         item.classList.add('flip');
         setTimeout(function(){
             matchFunc();
-        }, 1500);
+        }, 1200);
     }else{
         return;
     }
