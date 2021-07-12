@@ -39,23 +39,29 @@ header h2{
     text-align: center;
 }
 
-.one-card img {
-    display: block;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-
 
 .one-card.flip{
     transform: rotateY(180deg);    /*learn it*/
 }
 
-.shown-img{
+.shown-img, .hidden-img{
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.shown-img {
+    
     backface-visibility: hidden;
 }
 
+.hidden-img {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
 
 .one-card.fixed{
     border:5px solid rgb(228, 162, 81);
