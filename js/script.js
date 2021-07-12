@@ -22,7 +22,12 @@ const score_html=document.getElementById('score-layout');
 
 function putInScore(){
     score_html.innerHTML="";
-    score_html.innerHTML+=`Your Score:  ${score} / 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Move:  ${move}`;
+    score_html.innerHTML+=`Your Score:  ${score} / 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Moves:  ${move}`;
+    if(score==10){
+        alert(`Congratulation! But...can you make it within ${move-1} moves?`);
+    }else{
+        return;
+    }
 }
 
 
