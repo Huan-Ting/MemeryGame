@@ -16,12 +16,13 @@ let items_array=[];
 let first_card = null;
 let second_card = null;
 let score=0;
+let move=0;
 const score_html=document.getElementById('score-layout');
 
 
 function putInScore(){
     score_html.innerHTML="";
-    score_html.innerHTML+=`Your score:  ${score} / 10`;
+    score_html.innerHTML+=`Your Score:  ${score} / 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Move:  ${move}`;
 }
 
 
@@ -73,13 +74,14 @@ function matchFunc(){
         first_card.classList.add('fixed');
         second_card.classList.add('fixed');
         score+=1;
-        putInScore()
     }else{
         first_card.classList.remove("flip");
         second_card.classList.remove("flip");
     }
     first_card=null;
     second_card=null;
+    move+=1;
+    putInScore()
 }
 
 

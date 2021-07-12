@@ -117,14 +117,23 @@ header h2{
 
 
 /* 調整列表內容的parent的寬度，只列表內容自動調到下一排 */
-@media screen and (max-width:600px) {
+@media(max-width:1400px) {
     .items-layout{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content: center;  
-        margin-left: -10%;
-        margin-right: -10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+    .one-card {
+        max-width:18%;
+    }
+}
 
+@media(max-width:500px) {
+    .items-layout{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .one-card {
+        max-width:90%;
+    }
 }
 
