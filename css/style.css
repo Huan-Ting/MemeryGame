@@ -93,7 +93,7 @@ header h2{
 }
 
 .one-card.flip {
-    -webkit-transform: rotateY(180deg);
+     /*-webkit-transform: rotateY(180deg);*/
     transform: rotateY(180deg);
 }
 
@@ -102,19 +102,14 @@ header h2{
     height: 100%;
     position: absolute;
     border-radius: 5px;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 .hidden-img {
-    -webkit-transform: rotateY(180deg);
+    /*-webkit-transform: rotateY(180deg);*/
     transform: rotateY(180deg);
 }
-
-
-
-
-
-
 
 /* 調整列表內容的parent的寬度，只列表內容自動調到下一排 */
 @media(max-width:1400px) {
